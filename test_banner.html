@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <style>
+        .slider-image {
+            overflow: hidden;
+            height: 540px;
+            width: 100%;
+        }
+
+        .image-container {
+            width: 300%;
+            /*animation: slideShow 40s infinite;*/
+        }
+
+            .image-container img {
+                float: left;
+                height: 540px;
+                width: 33.33333%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                animation: fade 3s
+            }
+
+        /* @keyframes slideShow {
+            20% {
+                margin-left: 0;
+            }
+            40% {
+                margin-left: -100%;
+            }
+            60% {
+                margin-left: -200%;
+            }
+        }*/
+        @keyframes slideShow {
+
+
+           /* 0% {
+                margin-left: 0;
+            }
+
+            10% {
+                margin-left: 0;
+            }
+
+            20% {
+                margin-left: -100%;
+            }
+
+            30% {
+                margin-left: -100%;
+            }
+
+            40% {
+                margin-left: -200%;
+            }
+
+            50% {
+                margin-left: -200%;
+            }
+
+            60% {
+                margin-left: -100%;
+            }
+
+            70% {
+                margin-left: -100%;
+            }*/
+            from {
+                opacity: 0.1;
+            }
+
+            to {
+                opacity: 1;
+            }
+           
+        }
+
+
+
+
+        /*.slider {
+            width: 100%;
+            height: 540px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .slides {
+            width: 300%;
+            height: 540px;
+            display: flex;
+        }
+
+            .slides input {
+                display: none;
+            }
+
+        .slide {
+            width: 50%;
+            transition: 2s;
+        }
+
+            .slide img {
+                width: 100%;
+                height: 540px;
+            }*/
+
+        .arrow {
+            z-index: 10;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: auto;
+            right: auto;
+            width: 1.5rem;
+            height: 1.5rem;
+            font-size: 1.5rem;
+            color: cornsilk;
+            opacity: 0.5;
+            transition: opacity 1s;
+        }
+
+            .arrow:hover {
+                cursor: pointer;
+                opacity: 1;
+            }
+
+        .arrow-left {
+            left: 2%;
+        }
+
+        .arrow-right {
+            right: 2%;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="slider-frame">
+
+        <div class="slider-image">
+            <div class="arrow arrow-left"><i class="fas fa-chevron-circle-left"></i></div>
+            <div class="image-container">
+                <img src="images/banner.jpg" />
+
+
+            </div>
+            <div class="image-container">
+
+                <img src="images/banner1.jpg" />
+
+
+            </div>
+            <div class="image-container">
+
+                <img src="images/banner2.jpg" />
+
+            </div>
+            <div class="arrow arrow-right">
+                <i class="fas fa-chevron-circle-right"></i>
+
+
+            </div>
+
+        </div>
+
+
+        <!--<div class="slider">
+            <div class="slides">-->
+        <!--radio buttons start-->
+        <!--<input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">-->
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <!--<div class="slide first">
+            <img src="images/banner.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/banner1.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="images/banner2.jpg" alt="">
+        </div>-->
+        <!--slide images end-->
+        <!--automatic navigation start-->
+        <!--<div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+
+        </div>-->
+        <!--automatic navigation end-->
+        <!--</div>-->
+        <!--manual navigation start-->
+        <!--<div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+
+        </div>-->
+        <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+    <!--<script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 3) {
+                counter = 1;
+            }
+        }, 3000);
+    </script>-->
+    <script>
+        const imgs = document.querySelectorAll(".image-container img");
+       
+        const leftArrow = document.querySelector(".arrow-left");
+        const rightArrow = document.querySelector(".arrow-right");
+
+        let currentIndex = 0;
+        let time = 7000;
+
+        const defClass = (startPos, index) => {
+            for (let i = startPos; i < imgs.length; i++) {
+                imgs[i].style.display = "none";
+                
+            }
+            imgs[index].style.display = "block";
+         
+        };
+
+        defClass(1, 0);
+
+        leftArrow.addEventListener("click", function () {
+            currentIndex <= 0 ? currentIndex = imgs.length - 1 : currentIndex--;
+            defClass(0, currentIndex);
+        });
+
+        rightArrow.addEventListener("click", function () {
+            currentIndex >= imgs.length - 1 ? currentIndex = 0 : currentIndex++;
+            defClass(0, currentIndex);
+        });
+        const startAutoSlide = () => {
+            setInterval(() => {
+                currentIndex >= imgs.length - 1 ? currentIndex = 0 : currentIndex++;
+                defClass(0, currentIndex);
+            }, time);
+        };
+
+        startAutoSlide();
+       
+    </script>
+</body>
+</html>

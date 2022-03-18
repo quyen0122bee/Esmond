@@ -1,0 +1,710 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>EVERWIN</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="/IMG/logo.ico" rel="shortcut icon" />
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+    <link href="CSS/web.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="../CSS/style1.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/lightslider.css" />
+    <script src="../Scripts/jquery-3.5.1.js"></script>
+    <script src="../Scripts/lightslider.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#autoWidth').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="page">
+
+        <div class="header">
+
+            <div class="sticky">
+                <div class="logo fl">
+                    <a href="index.html">
+                        <img src="../images/logo.png" alt="" />
+                    </a>
+                </div>
+                <nav>
+                    <div class="topnav fr">
+                        <div class="dropdown1">
+                            <a href="index.html">Trang Chủ</a>
+                        </div>
+                        <div class="dropdown1">
+                            <span class="dropbtn">
+                            Sản Phẩm <i class="fa fa-caret-down"></i>
+                            </span>
+                            <div class="dropdown-content">
+                                <a href="Shop.html">Beauty</a>
+                                <a href="Shop.html">Body</a>
+                                <a href="Shop.html">Enegry</a>
+                                <a href="Shop.html">Kid's Health</a>
+                            </div>
+                         </div>
+                        <div class="dropdown1">
+                                <a href="About-us.html">Về Chúng Tôi</a>
+                        </div>
+                         <div class="dropdown1">
+                                <a href="contact-us.html">Liên Hệ</a>
+                         </div>
+                        </div>
+                </nav>
+                <div>
+                    <button class="btn-open" onclick="w3_open()">☰</button>
+                </div>
+            </div><!--sticky-->
+        </div>
+        <div class="menuM" style="display:none" id="mySidebar">
+            <div>
+                <button onclick="w3_close()" class="btn-close"><i class="fa fa-close"></i> </button>
+            </div>
+            <div>
+                <a href="index.html" class="dropbtnM">Trang Chủ</a>
+            </div>
+                
+             <div class="dropdownM">
+                 <span class="dropbtnM"> 
+                     Sản Phẩm <i class="fa fa-caret-down"></i>
+                 </span>
+                 <div class="dropdown-contentM">
+                     <a href="Shop.html">Beauty</a>
+                     <a href="Shop.html">Body</a>
+                     <a href="Shop.html">Enegry</a>
+                     <a href="Shop.html">Kid's Health</a>
+                 </div>
+             </div>
+             <div>
+                    <a href="About-us.html" class="dropbtnM">Về Chúng Tôi</a>
+             </div>
+           
+             <div>
+                    <a href="contact-us.html" class="dropbtnM">Liên Hệ</a>
+             </div>                      
+        </div>
+        <div class="slider-frame">
+            <div class="slider-image">
+                <div class="arrow arrow-left"><i class="fas fa-chevron-circle-left"></i></div>
+                <div class="image-container">
+                    <img src="images/banner.jpg" />
+                </div>
+                <div class="image-container">
+                    <img src="images/banner1.jpg" />
+                </div>
+                <div class="image-container">
+                    <img src="images/banner2.jpg" />
+                </div>
+                <div class="arrow arrow-right">
+                    <i class="fas fa-chevron-circle-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="container1">
+            <div class="box1">
+                <div class="box1 content">
+                    <img src="../images/mission.jpg" alt="" />
+                </div><!--Để hình-->
+
+                <div class="box1 content">
+                    <h2 style="text-align:center" ;>Nhiệm vụ của chúng tôi</h2>
+                    <p>
+                        We are a research, development, production and sales combined multi-national nutrition supplement
+                        corporation based in USA. We are also one of the well-known all-natural herbs and supplement production
+                        and export company in USA. With more than 200 employees and 3 branch offices, Esmond Natural has successfully
+                        launched its products all around the globe, from North America to entire Asia.
+                    </p>
+                    <p>
+                        Our products are designed to help customers stay in good health.  Each sales center has multiple trained
+                        experts ready to answer any questions you may have, whether it is about immune system enhancement, bone structure
+                        enhancement, skin management, to relive stress, or everyday care.  Our goal is to design the perfect health plan for
+                        every customer that comes to Esmond Natural.
+                    </p>
+                </div>
+            </div>
+            <!--để content-->
+
+        </div>
+
+        <div class="container1">
+
+
+            <div>
+                <div class="row2">
+                    <h2>ESMOND NATURAL PRODUCT HIGHLIGHTS</h2>
+                </div>
+
+                <div class="row2" id="row2">
+
+                    <div class="box2">
+                        <img src="../images/oil.jpg" alt="" />
+                        <div class="text">
+                            <h3>HIGH POTENCY EVENING PRIMROSE OIL</h3>
+                            <p>
+                                Plant Derived, hand harvested and Cold Pressed from the seed of the Evening Primrose Plant.
+                                Helps Maintain Healthy Skin, Prostaglandin levels & a Balanced Immune Response. Hexane, Gluten
+                                and GMO Free. Formulated Without Preservatives, Soy, Artificial Colorings, Stearates or Titanium Dioxide.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="../images/fish.jpeg" alt="" />
+                        <div class="text">
+                            <h3>ESMOND NATURAL FISH OIL</h3>
+                            <p>
+                                Fish oil is one of the most commonly consumed dietary supplements. It's rich in omega-3 fatty acids,
+                                which are very important for your health. If you don't eat a lot of oily fish, taking a fish oil supplement
+                                could help you get enough omega-3 fatty acids.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <img src="../images/maca.jpg" alt="" />
+                        <div class="text">
+                            <h3>SUPER MACA CAPSULEL</h3>
+                            <p>
+                                Maca root (lepidium meyenii) is an adaptogen and a member of the cruciferous family,
+                                like broccoli and cabbage, but due to its unique properties it considered one of the world’s natural
+                                “super foods.” Maca is grown high in the mountains of South America, mainly in high altitude regions of Peru.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <!--<div class="row2">
+
+
+                <div class="box2">
+                    <img src="../images/old.jpeg" alt="" />
+                    <div class="text">
+                        <h3>ABC PLUS SENIOR MULTIVITAMIN SPECIALLY FORMULATED FOR ADULTS OVER 50</h3>
+                        <p>
+                            A special high-quality blend of vitamins and minerals formulated exclusively for adults 50 and over;
+                            delivers 100% or more daily values of Vitamins C, D, E, B-2, Niacin, Folic Acid, B-12, Zinc and more.
+                            This iron-free, heart-healthy supplement also includes Lutein and Lycopene.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="box2">
+                    <img src="../images/lemon.jpeg" alt="" />
+                    <div class="text">
+                        <h3>KIWI FRUIT CARROT FRUIT AND VEGETABLE COMPLEX</h3>
+                        <p>
+                            MA special high-quality blend of vitamins and minerals formulated delivers 100%
+                            or more daily values of Vitamins and more.
+                        </p>
+                    </div>
+
+                </div>
+            </div>-->
+                <!--2 ô dưới-->
+            </div>
+
+
+            <!--<div class="elementor">
+            <div class="row3">
+                <h2>ESMOND NATURAL BRINGS YOU THE BEST PRODUCTS</h2>
+            </div>
+
+            <div class="row3">
+
+
+                <div class="box3">
+                    <img src="../images/best products1.png" alt="" />
+                    <div class="text">
+                        <p>HIGH POTENCY EVENING PRIMROSE OIL</p>
+
+
+                    </div>
+                </div>
+                <div class="box3">
+                    <img src="../images/best products2.png" alt="" />
+                    <div class="text">
+                        <p>ESMOND NATURAL FISH OIL</p>
+
+                    </div>
+                </div>
+                <div class="box3">
+                    <img src="../images/best products3.png" alt="" />
+                    <div class="text">
+                        <p>SUPER MACA CAPSULEL</p>
+
+                    </div>
+
+                </div>
+
+                <div class="box3">
+                    <img src="../images/best products4.png" alt="" />
+                    <div class="text">
+                        <p>SUPER MACA CAPSULEL</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row3">
+                <div class="box3">
+                    <img src="../images/best products5.png" alt="" />
+                    <div class="text">
+                        <p>SUPER MACA CAPSULEL</p>
+
+                    </div>
+
+                </div>
+
+                <div class="box3">
+                    <img src="../images/best products6.png" alt="" />
+                    <div class="text">
+                        <p>SUPER MACA CAPSULEL</p>
+
+                    </div>
+
+                </div>
+
+                <div class="box3">
+                    <img src="../images/best products7.png" alt="" />
+                    <div class="text">
+                        <p>SUPER MACA CAPSULEL</p>
+
+                    </div>
+
+                </div>
+
+                <div class="box3">
+                    <img src="../images/best products8.png" alt="" />
+                    <div class="text">
+                        <p>SUPER MACA CAPSULEL</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>-->
+            <div class="elementor">
+                <div class="row3">
+                    <h2>ESMOND NATURAL BRINGS YOU THE BEST PRODUCTS</h2>
+                </div>
+
+                <div class="row3">
+
+
+                    <div class="box3">
+                        <img src="../images/best products1.png" alt="" />
+                        <div class="text">
+                            <p>HIGH POTENCY EVENING PRIMROSE OIL</p>
+
+
+                        </div>
+                    </div>
+                    <div class="box3">
+                        <img src="../images/best products2.png" alt="" />
+                        <div class="text">
+                            <p>ESMOND NATURAL FISH OIL</p>
+
+                        </div>
+                    </div>
+                    <div class="box3">
+                        <img src="../images/best products3.png" alt="" />
+                        <div class="text">
+                            <p>SUPER MACA CAPSULEL</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box3">
+                        <img src="../images/best products4.png" alt="" />
+                        <div class="text">
+                            <p>SUPER MACA CAPSULEL</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box3">
+                        <img src="../images/best products5.png" alt="" />
+                        <div class="text">
+                            <p>SUPER MACA CAPSULEL</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box3">
+                        <img src="../images/best products6.png" alt="" />
+                        <div class="text">
+                            <p>SUPER MACA CAPSULEL</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box3">
+                        <img src="../images/best products7.png" alt="" />
+                        <div class="text">
+                            <p>SUPER MACA CAPSULEL</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box3">
+                        <img src="../images/best products8.png" alt="" />
+                        <div class="text">
+                            <p>SUPER MACA CAPSULEL</p>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+        </div>
+
+        <section class="slider">
+            <!--slide products-->
+            <ul id="autoWidth" class="cs-hidden">
+
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img alt="" src="../images/products1.jpg">
+                            <div class="overlay">
+                                <a href="details.html" class="buy-btn">Quick View</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="details.html">Esmond Natural Noni Capsule</a>
+                                <!--<span>Tour Package</span>-->
+                            </div>
+                            <a href="details.html" class="price">$23</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img alt="" src="../images/products1.jpg">
+                            <div class="overlay">
+                                <a href="details.html" class="buy-btn">Quick View</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="details.html">Esmond Natural Noni Capsule</a>
+                                <!--<span>Tour Package</span>-->
+                            </div>
+                            <a href="details.html" class="price">$23</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img alt="" src="../images/products1.jpg">
+                            <div class="overlay">
+                                <a href="details.html" class="buy-btn">Quick View</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="details.html">Esmond Natural Noni Capsule</a>
+                                <!--<span>Tour Package</span>-->
+                            </div>
+                            <a href="details.html" class="price">$23</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img alt="" src="../images/products1.jpg">
+                            <div class="overlay">
+                                <a href="details.html" class="buy-btn">Quick View</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="details.html">Esmond Natural Noni Capsule</a>
+                                <!--<span>Tour Package</span>-->
+                            </div>
+                            <a href="details.html" class="price">$23</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img alt="" src="../images/products1.jpg">
+                            <div class="overlay">
+                                <a href="details.html" class="buy-btn">Quick View</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="details.html">Esmond Natural Noni Capsule</a>
+                                <!--<span>Tour Package</span>-->
+                            </div>
+                            <a href="details.html" class="price">$23</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img alt="" src="../images/products1.jpg">
+                            <div class="overlay">
+                                <a href="details.html" class="buy-btn">Quick View</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="details.html">Esmond Natural Noni Capsule</a>
+                                <!--<span>Tour Package</span>-->
+                            </div>
+                            <a href="details.html" class="price">$23</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img alt="" src="../images/products1.jpg">
+                            <div class="overlay">
+                                <a href="details.html" class="buy-btn">Quick View</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="details.html">Esmond Natural Noni Capsule</a>
+                                <!--<span>Tour Package</span>-->
+                            </div>
+                            <a href="details.html" class="price">$23</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img alt="" src="../images/products1.jpg">
+                            <div class="overlay">
+                                <a href="details.html" class="buy-btn">Quick View</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="details.html">Esmond Natural Noni Capsule</a>
+                                <!--<span>Tour Package</span>-->
+                            </div>
+                            <a href="details.html" class="price">$23</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img alt="" src="../images/products1.jpg">
+                            <div class="overlay">
+                                <a href="details.html" class="buy-btn">Quick View</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="details.html">Esmond Natural Noni Capsule</a>
+                                <!--<span>Tour Package</span>-->
+                            </div>
+                            <a href="details.html" class="price">$23</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="item-a">
+                    <div class="box">
+                        <div class="slide-img">
+                            <img alt="" src="../images/products1.jpg">
+                            <div class="overlay">
+                                <a href="details.html" class="buy-btn">Quick View</a>
+                            </div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="type">
+                                <a href="details.html">Esmond Natural Noni Capsule</a>
+                                <!--<span>Tour Package</span>-->
+                            </div>
+                            <a href="details.html" class="price">$23</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="lSAction">
+                <a class="lSPrev"></a>
+                <a class="lSNext"></a>
+            </div>
+        </section>
+        <!--slide products-->
+
+    </div>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="noi-dung links">              
+                <div class="footer-logo"></div>            
+            </div>
+            <div class="noi-dung links">
+                <h3>Về Chúng Tôi</h3>             
+                <ul>
+                    <li> <a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Hệ Thống Cửa Hàng</a></li>
+                    <li> <a href="#">Thống Tin Tuyển Dụng</a></li>
+                </ul>
+            </div>
+            <div class="noi-dung links">
+                <h3>Hỗ Trợ Khách Hàng</h3>
+                <ul>
+                    <li><a href="#">Hướng Dẫn Thanh Toán</a></li>
+                    <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="#">Chính Sách Khách Hàng</a></li>
+                    <li><a href="#">Góp Ý, Khiếu Nại</a></li>
+                </ul>
+            </div>
+           
+            <div class="noi-dung links" id="chinhsach">
+                <h3>Chính Sách Chung</h3>
+                <ul>
+                    <li><a href="#">Chính Sách Đổi Trả</a></li>
+                    <li><a href="#">Chính Sách Vận Chuyển</a></li>
+                    <li><a href="#">Quy Định Chung</a></li>
+                    <li><a href="#">Bảo Mật Thông Tin Khách Hàng</a></li>
+                </ul>
+            </div>          
+            <div class="noi-dung links">
+                <h3>Thông Tin Liên Hệ</h3>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <a>
+                            5316 N Irwindale Ave, Irwindale, CA 91706
+                        </a>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <span>
+                            <a href="#"> (626) 337-1588; </a>
+
+                            <a href="#">(800) 814-6866</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <a href="#">Info@Esmondnatural.com</a>
+                    </li>
+                </ul>
+            </div>           
+        </div>
+        <div class="glyphicon-copyright-mark" style="background-color:#000;width:100% ">
+            <p style="color:#ffffff;text-align:center">Copyright 2022 © Esmond Natural Inc.</p>
+        </div>
+    </footer>
+    <script>
+       
+        
+        const imgs = document.querySelectorAll(".image-container img");
+        const leftArrow = document.querySelector(".arrow-left");
+        const rightArrow = document.querySelector(".arrow-right");
+
+        let currentIndex = 0;
+        let time = 7000;
+
+        const defClass = (startPos, index) => {
+            for (let i = startPos; i < imgs.length; i++) {
+                imgs[i].style.display = "none";
+
+            }
+            imgs[index].style.display = "block";
+
+        };
+       
+        defClass(1, 0);
+
+        leftArrow.addEventListener("click", function () {
+            currentIndex <= 0 ? currentIndex = imgs.length - 1 : currentIndex--;
+            defClass(0, currentIndex);
+        });
+
+        rightArrow.addEventListener("click", function () {
+            currentIndex >= imgs.length - 1 ? currentIndex = 0 : currentIndex++;
+            defClass(0, currentIndex);
+        });
+        const startAutoSlide = () => {
+            setInterval(() => {
+                currentIndex >= imgs.length - 1 ? currentIndex = 0 : currentIndex++;
+                defClass(0, currentIndex);
+            }, time);
+        };
+
+        startAutoSlide();
+
+
+         function w3_open() {
+            document.getElementById("mySidebar").style.width = "60%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+
+    </script>
+</body>
+
+
+
+
+</html>

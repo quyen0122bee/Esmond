@@ -1,0 +1,488 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+
+    <title>Shop </title>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="/IMG/logo.ico" rel="shortcut icon" />
+    <link href="CSS/shop.css" rel="stylesheet" />
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+
+    <script src="../Scripts/jquery-3.5.1.js"></script>
+  
+
+  
+
+   
+</head>
+<body>
+    <div class="page">
+
+        <div class="header">
+
+            <div class="sticky">
+                <div class="logo fl">
+                    <a href="index.html">
+                        <img src="../images/logo.png" alt="" />
+                    </a>
+
+                </div>
+                <nav>
+                    <div class="topnav fr">
+                        <div class="dropdown1">
+                            <a href="index.html">Trang Chủ</a>
+                        </div>
+                        <div class="dropdown1">
+                            <span class="dropbtn">
+                                Sản Phẩm <i class="fa fa-caret-down"></i>
+                            </span>
+                            <div class="dropdown-content">
+                                <a href="Shop.html">Beauty</a>
+                                <a href="Shop.html">Body</a>
+                                <a href="Shop.html">Enegry</a>
+                                <a href="Shop.html">Kid's Health</a>
+                            </div>
+                        </div>
+                        <div class="dropdown1">
+                            <a href="About-us.html">Về Chúng Tôi</a>
+                        </div>
+                        <div class="dropdown1">
+                            <a href="contact-us.html">Liên Hệ</a>
+                        </div>
+                    </div>
+                </nav>
+                <div>
+                    <button class="btn-open" onclick="w3_open()">☰</button>
+
+                </div>
+
+
+
+
+            </div><!--sticky-->
+        </div>
+        
+        
+        <section>
+
+            <div class="container">
+                <div class="row">
+                    <div class="menuM" style="display:none" id="mySidebar">
+                        <div>
+                            <button onclick="w3_close()" class="btn-close"><i class="fa fa-close"></i> </button>
+                        </div>
+                        <div>
+                            <a href="index.html" class="dropbtnM">Trang Chủ</a>
+                        </div>
+
+                        <div class="dropdownM">
+                            <span class="dropbtnM">
+                                Sản Phẩm <i class="fa fa-caret-down"></i>
+                            </span>
+                            <div class="dropdown-contentM">
+                                <a href="Shop.html">Beauty</a>
+                                <a href="Shop.html">Body</a>
+                                <a href="Shop.html">Enegry</a>
+                                <a href="Shop.html">Kid's Health</a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="About-us.html" class="dropbtnM">Về Chúng Tôi</a>
+                        </div>
+
+                        <div>
+                            <a href="contact-us.html" class="dropbtnM">Liên Hệ</a>
+                        </div>
+                    </div><!--mobile menu-->
+                    <div id="advertisement">
+                        <div class="container">
+                            <img src="../images/advertisement.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="left-sidebar">
+                            <h2>Category</h2>
+                            <div class="panel-group category-products">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <p class="panel-title"><a href="#">Beauty</a></p>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <p class="panel-title"><a href="#">Body</a></p>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <p class="panel-title"><a href="#">Digestive-Health</a></p>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <p class="panel-title"><a href="#">Energy</a></p>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <p class="panel-title"><a href="#">Heart</a></p>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <p class="panel-title"><a href="#">Kid's Health</a></p>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <p class="panel-title"><a href="#">Mind</a></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!--left sidebar-->
+
+                    <div>
+                        <button class="btn-open filter" onclick="filter_open()"><i class="fa fa-filter"></i></button>
+                    </div>
+                    <div class="filter-mobile" style="display:none" id="filter_moblie">
+                        <div>
+                            <button onclick="filter_close()" class="btn-close"><i class="fa fa-close"></i> </button>
+                        </div>
+                        <div>
+                            <h4>Categories</h4>
+                            <a href="Shop.html">Beauty</a>
+                            <a href="Shop.html">Body</a>
+                            <a href="Shop.html">Enegry</a>
+                            <a href="Shop.html">Kid's Health</a>
+                        </div>
+                    </div><!--bộ lọc mobile-->
+
+                    <div class="content">
+                        <!-- content here -->
+                        <div class="product-grid product-grid--flexbox">
+                            <div class="product-grid__wrapper">
+                                <!-- Product list start here -->
+                                <!-- Single product -->
+                                <div class="product-grid__product-wrapper">
+
+                                    <div class="product-grid__product">
+
+                                        <div class="product-grid__img-wrapper">
+                                            <a href="details.html">
+                                                <img src="../images/products1.jpg" alt="Img" class="product-grid__img" />
+                                            </a>
+                                        </div>
+                                        <span class="product-grid__title">Product title</span>
+                                        <span class="product-grid__price">1.399$</span>
+                                        <div class="product-grid__extend-wrapper">
+                                            <div class="product-grid__extend">
+                                                <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                                <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i><a href="details.html"> View more</a></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- end Single product -->
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <a href="details.html">
+                                                <img src="../images/products1.jpg" alt="Img" class="product-grid__img" />
+                                            </a>
+                                        </div>
+                                        <span class="product-grid__title">Product title</span>
+                                        <span class="product-grid__price">1.399$</span>
+                                        <div class="product-grid__extend-wrapper">
+                                            <div class="product-grid__extend">
+                                                <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                                <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <a href="details.html">
+                                                <img src="../images/products1.jpg" alt="Img" class="product-grid__img" />
+                                            </a>
+                                        </div>
+                                        <span class="product-grid__title">Product title</span>
+                                        <span class="product-grid__price">1.399$</span>
+                                        <div class="product-grid__extend-wrapper">
+                                            <div class="product-grid__extend">
+                                                <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                                <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <a href="details.html">
+                                                <img src="../images/products1.jpg" alt="Img" class="product-grid__img" />
+                                            </a>
+                                        </div>
+                                        <span class="product-grid__title">Product title</span>
+                                        <span class="product-grid__price">1.399$</span>
+                                        <div class="product-grid__extend-wrapper">
+                                            <div class="product-grid__extend">
+                                                <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                                <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <a href="details.html">
+                                                <img src="../images/products1.jpg" alt="Img" class="product-grid__img" />
+                                            </a>
+                                        </div>
+                                        <span class="product-grid__title">Product title</span>
+                                        <span class="product-grid__price">1.399$</span>
+                                        <div class="product-grid__extend-wrapper">
+                                            <div class="product-grid__extend">
+                                                <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                                <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <a href="details.html">
+                                                <img src="../images/products1.jpg" alt="Img" class="product-grid__img" />
+                                            </a>
+                                        </div>
+                                        <span class="product-grid__title">Product title</span>
+                                        <span class="product-grid__price">1.399$</span>
+                                        <div class="product-grid__extend-wrapper">
+                                            <div class="product-grid__extend">
+                                                <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                                <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <a href="details.html">
+                                                <img src="../images/products1.jpg" alt="Img" class="product-grid__img" />
+                                            </a>
+                                        </div>
+                                        <span class="product-grid__title">Product title</span>
+                                        <span class="product-grid__price">1.399$</span>
+                                        <div class="product-grid__extend-wrapper">
+                                            <div class="product-grid__extend">
+                                                <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                                <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <a href="details.html">
+                                                <img src="../images/products1.jpg" alt="Img" class="product-grid__img" />
+                                            </a>
+                                        </div>
+                                        <span class="product-grid__title">Product title</span>
+                                        <span class="product-grid__price">1.399$</span>
+                                        <div class="product-grid__extend-wrapper">
+                                            <div class="product-grid__extend">
+                                                <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                                <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product-grid__product-wrapper">
+                                    <div class="product-grid__product">
+                                        <div class="product-grid__img-wrapper">
+                                            <a href="details.html">
+                                                <img src="../images/products1.jpg" alt="Img" class="product-grid__img" />
+                                            </a>
+                                        </div>
+                                        <span class="product-grid__title">Product title</span>
+                                        <span class="product-grid__price">1.399$</span>
+                                        <div class="product-grid__extend-wrapper">
+                                            <div class="product-grid__extend">
+                                                <p class="product-grid__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis velit itaque odit.</p>
+                                                <span class="product-grid__btn product-grid__add-to-cart"><i class="fa fa-cart-arrow-down"></i> Add to cart</span>
+                                                <span class="product-grid__btn product-grid__view"><i class="fa fa-eye"></i> View more</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!--Item-->
+
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+
+        </section>
+    </div>
+
+    <footer>
+        <div class="containerbot">
+
+
+            <div class="noi-dung links">
+                <!--<h3>Về Chúng Tôi</h3>-->
+                <div class="footer-logo"></div>
+
+
+
+
+            </div>
+
+            <div class="noi-dung links">
+                <h3>Về Chúng Tôi</h3>
+
+
+                <ul>
+                    <li> <a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Hệ Thống Cửa Hàng</a></li>
+                    <li> <a href="#">Thống Tin Tuyển Dụng</a></li>
+                </ul>
+
+
+            </div>
+
+            <div class="noi-dung links">
+                <h3>Hỗ Trợ Khách Hàng</h3>
+                <ul>
+                    <li><a href="#">Hướng Dẫn Thanh Toán</a></li>
+                    <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="#">Chính Sách Khách Hàng</a></li>
+                    <li><a href="#">Góp Ý, Khiếu Nại</a></li>
+
+                </ul>
+            </div>
+            <!--nội dung chính sachc-->
+            <div class="noi-dung links" id="chinhsach">
+                <h3>Chính Sách Chung</h3>
+                <ul>
+                    <li><a href="#">Chính Sách Đổi Trả</a></li>
+                    <li><a href="#">Chính Sách Vận Chuyển</a></li>
+                    <li><a href="#">Quy Định Chung</a></li>
+                    <li><a href="#">Bảo Mật Thông Tin Khách Hàng</a></li>
+
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung chính sách-->
+            <!--Bắt Đâu Nội Dung Liên Hệ-->
+            <div class="noi-dung links">
+                <h3>Thông Tin Liên Hệ</h3>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <a>
+                            5316 N Irwindale Ave, Irwindale, CA 91706
+                        </a>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <span>
+                            <a href="#"> (626) 337-1588; </a>
+
+                            <a href="#">(800) 814-6866</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <a href="#">Info@Esmondnatural.com</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <!--Kết Thúc Nội Dung Liên Hệ-->
+        </div>
+        <div class="glyphicon-copyright-mark" style="background-color:#000;width:100% ">
+            <p style="color:#ffffff;text-align:center">Copyright 2022 © Esmond Natural Inc.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="Scripts/jquery.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "60%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+        /**filter */
+        function filter_open() {
+            document.getElementById("filter_moblie").style.width = "30%";
+            document.getElementById("filter_moblie").style.display = "block";
+        }
+        function filter_close() {
+            document.getElementById("filter_moblie").style.display = "none";
+        }
+    </script>
+
+</body>
+
+    
+
+
+</html>
