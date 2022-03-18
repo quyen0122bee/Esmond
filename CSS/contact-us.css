@@ -665,7 +665,7 @@ textarea {
     }
 }
 
-@media screen and (max-width: 480px) {
+/*@media screen and (max-width: 480px) {
   h1 {
     font-size: 26px;
   }
@@ -677,9 +677,9 @@ textarea {
   #form_button {
     padding: 15px 25px;
   }
-}
+}*/
 
-@media screen and (max-width: 420px) {
+/*@media screen and (max-width: 420px) {
   h1 {
     font-size: 18px;
   }
@@ -696,4 +696,4 @@ textarea {
   input[type='text'], [type='email'], select, textarea {
     font-size: 0.875em;
   }
-}
+}*/
