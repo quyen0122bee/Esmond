@@ -569,10 +569,14 @@ footer .containerbot {
         flex-direction: column;
         text-align: center;
     }
+    .containerbot .noi-dung.links {
+        width: 100%;
+    }
 
         footer .containerbot .footer-logo {
             margin-top: 5%;
         }
+
 
     #chinhsach {
         display: none;

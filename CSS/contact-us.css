@@ -655,6 +655,27 @@ textarea {
     }
 }
 
+@media screen and (max-width:1200px) {
+    nav {
+        display: none;
+    }
+
+    .header .sticky .btn-open {
+        display: block;
+    }
+
+   
+
+
+
+    .containerbot .noi-dung.links {
+        width: 45%;
+    }
+
+    #chinhsach {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 768px) {
   #containerbot {
@@ -684,6 +705,9 @@ textarea {
     footer .containerbot {
         flex-direction: column;
         text-align: center;
+    }
+    .containerbot .noi-dung.links {
+        width: 100%;
     }
 
         footer .containerbot .footer-logo {
