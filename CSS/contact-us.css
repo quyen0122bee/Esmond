@@ -379,17 +379,18 @@ footer .containerbot {
 
 
 .container-contact .box5 {
-    width: 90%;
+    width: 100%;
     height: auto;
     float: left;
-    margin-left: 5%;
-    margin-right: 5%;
-   /* margin-top: 10%;*/
+   /* margin-left: 5%;
+    margin-right: 5%;*/
+    margin-top: 5%;
     line-height: 2;
 }
    .container-contact .box5_content {
                    float:left;
-                   width:50%;
+                   width:45%;
+                   padding-left:5%;
                    height:auto;
 
                     
@@ -620,12 +621,40 @@ textarea {
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+    margin-left:36%;
 }
 
 #form_button:hover {
   background: #474544;
   color: #F2F3EB;
 }
+@media screen and (max-width:1200px) {
+    nav {
+        display: none;
+    }
+
+    .header .sticky .btn-open {
+        display: block;
+    }
+
+
+    .container-contact .box5_content {
+        text-align: center;
+        width: auto;
+        float: none;
+        padding-right: 5%;
+    }
+
+
+    .container .noi-dung.links {
+        width: 45%;
+    }
+
+    #chinhsach {
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
   #containerbot {
@@ -648,6 +677,7 @@ textarea {
         text-align: center;
         width:auto;
         float:none;
+        padding-right:5%;
     }
 
 

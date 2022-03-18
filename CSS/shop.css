@@ -515,6 +515,27 @@ footer .containerbot {
 .link ul a:hover {
     opacity: 0.8;
 }
+@media screen and (max-width:1200px) {
+    nav {
+        display: none;
+    }
+
+    .header .sticky .btn-open {
+        display: block;
+    }
+
+ 
+
+
+
+    .containerbot .noi-dung.links {
+        width: 45%;
+    }
+
+    #chinhsach {
+        display: none;
+    }
+}
 
 
 @media screen and (max-width:768px) {
@@ -559,13 +580,7 @@ footer .containerbot {
 }
 
 @media screen and (max-width:480px) {
-  /*  .slider-image {
-        margin-top: 15%;
-    }
-
-    .menuM {
-        margin-top: 9%;
-    }*/
+  
 }
 
 
