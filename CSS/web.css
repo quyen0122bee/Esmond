@@ -300,24 +300,29 @@ body {
         margin-top: 5%;
         margin-left: 5%;
         margin-right: 5%;
+       
         display: flex;
         justify-content: center;
     }
-     
-        .container1 .row2 .box2 {
-            /*margin-top: 15px;*/
-            display: flex;
-            
-            flex-wrap: wrap;
-            flex-direction: row;
-            width: 30%;
-            height: auto;
-            /*margin-left: 3%;*/
-            text-align: left;
-            overflow: hidden;
-            float: left;
-            padding:0 4% 0 0;
-        }
+.container1 .elementor {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container1 .row2 .box2 {
+    /*margin-top: 15px;*/
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 30%;
+    height: auto;
+    /*margin-left: 3%;*/
+    text-align: left;
+    overflow: hidden;
+    float: left;
+    padding: 0 4% 0 0;
+}
             .container1 .row2 .box2 h3 {
                 color: #039fa8;
             }
