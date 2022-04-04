@@ -270,6 +270,7 @@
     <Content Include="Shop.html" />
     <Content Include="test_banner.html" />
     <Content Include="Test_menu.html" />
+    <Content Include="test_upload.html" />
     <Content Include="Web.config" />
     <Content Include="CSS\web.css" />
     <Content Include="Web.Debug.config">

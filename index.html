@@ -9,7 +9,7 @@
     <link href="/IMG/logo.ico" rel="shortcut icon" />
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.6.0.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
@@ -41,35 +41,37 @@
                         <img src="../images/logo.png" alt="" />
                     </a>
                 </div>
-                <nav>
-                    <div class="topnav fr">
-                        <div class="dropdown1">
-                            <a href="index.html">Trang Chủ</a>
+
+                <div class="topnav fr" id="nav">
+
+                    <div class="dropdown1 fl">
+                        <a href="index.html">TRANG CHỦ</a>
+                    </div>
+                    <div class="dropdown1 fl">
+                        <span class="dropbtn">
+                            SẢN PHẨM <i class="fa fa-caret-down"></i>
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="Shop.html">Làm Đẹp</a>
+                            <a href="Shop.html">Tiêu Hóa</a>
+                            <a href="Shop.html">Năng Lượng</a>
+                            <a href="Shop.html">Tim Mạch</a>
+                            <a href="Shop.html">Trẻ Em</a>
+                            <a href="Shop.html">Não Bộ</a>
                         </div>
-                        <div class="dropdown1">
-                            <span class="dropbtn">
-                            Sản Phẩm <i class="fa fa-caret-down"></i>
-                            </span>
-                            <div class="dropdown-content">
-                                <a href="Shop.html">Làm Đẹp</a>
-                                <a href="Shop.html">Tiêu Hóa</a>
-                                <a href="Shop.html">Năng Lượng</a>
-                                <a href="Shop.html">Tim Mạch</a>
-                                <a href="Shop.html">Trẻ Em</a>
-                                <a href="Shop.html">Não Bộ</a>
-                            </div>
-                         </div>
-                        <div class="dropdown1">
-                                <a href="About-us.html">Về Chúng Tôi</a>
-                        </div>
-                         <div class="dropdown1">
-                                <a href="contact-us.html">Liên Hệ</a>
-                         </div>
-                        </div>
-                </nav>
+                    </div>
+                    <div class="dropdown1 fl">
+                        <a href="About-us.html">VỀ CHÚNG TÔI</a>
+                    </div>
+                    <div class="dropdown1 fl">
+                        <a href="contact-us.html">LIÊN HỆ</a>
+                    </div>
+                </div>
+
                 <div>
                     <button class="btn-open" onclick="w3_open()">☰</button>
                 </div>
+                <div class="clear"></div>
             </div><!--sticky-->
         </div>
         <div class="menuM" style="display:none" id="mySidebar">
@@ -79,28 +81,28 @@
             <div>
                 <a href="index.html" class="dropbtnM">Trang Chủ</a>
             </div>
-                
-             <div class="dropdownM">
-                 <span class="dropbtnM"> 
-                     Sản Phẩm <i class="fa fa-caret-down"></i>
-                 </span>
-                 <div class="dropdown-contentM">
-                     <a href="Shop.html">Làm Đẹp</a>
-                     <a href="Shop.html">Tiêu Hóa</a>
-                     <a href="Shop.html">Năng Lượng</a>
-                     <a href="Shop.html">Tim Mạch</a>
-                     <a href="Shop.html">Trẻ Em</a>
-                     <a href="Shop.html">Não Bộ</a>
 
-                 </div>
-             </div>
-             <div>
-                    <a href="About-us.html" class="dropbtnM">Về Chúng Tôi</a>
-             </div>
-           
-             <div>
-                    <a href="contact-us.html" class="dropbtnM">Liên Hệ</a>
-             </div>                      
+            <div class="dropdownM">
+                <span class="dropbtnM">
+                    Sản Phẩm <i class="fa fa-caret-down"></i>
+                </span>
+                <div class="dropdown-contentM">
+                    <a href="Shop.html">Làm Đẹp</a>
+                    <a href="Shop.html">Tiêu Hóa</a>
+                    <a href="Shop.html">Năng Lượng</a>
+                    <a href="Shop.html">Tim Mạch</a>
+                    <a href="Shop.html">Trẻ Em</a>
+                    <a href="Shop.html">Não Bộ</a>
+
+                </div>
+            </div>
+            <div>
+                <a href="About-us.html" class="dropbtnM">Về Chúng Tôi</a>
+            </div>
+
+            <div>
+                <a href="contact-us.html" class="dropbtnM">Liên Hệ</a>
+            </div>
         </div>
         <div class="slider-frame">
             <div class="slider-image">
@@ -126,17 +128,17 @@
                 </div><!--Để hình-->
 
                 <div class="box1 content">
-                    <h2 style="text-align:center" ;>Nhiệm vụ của chúng tôi</h2>
+                    <h2 style="text-align:center" ;>NHIỆM VỤ CỦA CHÚNG TÔI</h2>
                     <p>
                         Chúng tôi là một tập đoàn đa quốc gia nghiên cứu, phát triển, sản xuất và kinh doanh thực chức năng đa quốc gia
-                        có trụ sở tại Hoa Kỳ. Chúng tôi cũng là một trong những công ty sản xuất và xuất khẩu các chất bổ sung và thảo mộc hoàn toàn tự 
+                        có trụ sở tại Hoa Kỳ. Chúng tôi cũng là một trong những công ty sản xuất và xuất khẩu các chất bổ sung và thảo mộc hoàn toàn tự
                         nhiên nổi tiếng ở Mỹ. Với hơn 200 nhân viên và 3 văn phòng chi nhánh, Esmond Natural đã thành công trong việc tung ra các sản
                         phẩm của mình trên toàn cầu, từ Bắc Mỹ đến toàn Châu Á.
                     </p>
                     <p>
-                        Sản phẩm của chúng tôi giúp khách hàng có sức khỏe tốt. Mỗi trung tâm bán hàng đều có nhiều 
-                        chuyên gia được đào tạo sẵn sàng giải đáp bất kỳ câu hỏi nào của bạn, cho dù đó là về tăng cường hệ thống miễn 
-                        dịch, cải thiện xương khớp, chăm sóc da, giảm căng thẳng hay chăm sóc sức khỏe hàng ngày. Mục tiêu của chúng tôi là 
+                        Sản phẩm của chúng tôi giúp khách hàng có sức khỏe tốt. Mỗi trung tâm bán hàng đều có nhiều
+                        chuyên gia được đào tạo sẵn sàng giải đáp bất kỳ câu hỏi nào của bạn, cho dù đó là về tăng cường hệ thống miễn
+                        dịch, cải thiện xương khớp, chăm sóc da, giảm căng thẳng hay chăm sóc sức khỏe hàng ngày. Mục tiêu của chúng tôi là
                         mang đến sức khỏe hoàn hảo cho mọi khách hàng đến với Esmond Natural.
                     </p>
                 </div>
@@ -160,8 +162,8 @@
                         <div class="text">
                             <h3>DẦU HOA ANH THẢO CÓ HIỆU LỰC CAO</h3>
                             <p>
-                                Được chiết xuất từ ​​thực vật, thu hoạch thủ công và ép lạnh từ hạt hoa anh thảo. 
-                                Giúp duy trì làn da khỏe mạnh, mức Prostaglandin & Đáp ứng miễn dịch cân bằng. Hexane, 
+                                Được chiết xuất từ ​​thực vật, thu hoạch thủ công và ép lạnh từ hạt hoa anh thảo.
+                                Giúp duy trì làn da khỏe mạnh, mức Prostaglandin & Đáp ứng miễn dịch cân bằng. Hexane,
                                 Gluten và GMO không. Không có chất bảo quản, đậu nành, chất tạo màu,
                                 hơi nước hoặc Titanium Dioxide.
                             </p>
@@ -172,8 +174,8 @@
                         <div class="text">
                             <h3>DẦU CÁ TỰ NHIÊN ESMOND</h3>
                             <p>
-                                Dầu cá là một trong những thực phẩm chức năng phổ biến nhất. Nó giàu axit béo omega-3, 
-                                rất quan trọng đối với sức khỏe của bạn. Nếu bạn không ăn nhiều cá dầu, bổ sung dầu cá có thể giúp bạn 
+                                Dầu cá là một trong những thực phẩm chức năng phổ biến nhất. Nó giàu axit béo omega-3,
+                                rất quan trọng đối với sức khỏe của bạn. Nếu bạn không ăn nhiều cá dầu, bổ sung dầu cá có thể giúp bạn
                                 có đủ axit béo omega-3.
                             </p>
                         </div>
@@ -183,16 +185,16 @@
                         <div class="text">
                             <h3>VIÊN NANG SUPER MACAL</h3>
                             <p>
-                                Rễ Maca (lepidium meyenii) là một chất thích nghi và thuộc họ cải, giống như bông cải xanh và bắp cải, 
-                                nhưng do những đặc tính độc đáo của nó mà nó được coi là một trong những “siêu thực phẩm” tự nhiên trên thế giới. 
+                                Rễ Maca (lepidium meyenii) là một chất thích nghi và thuộc họ cải, giống như bông cải xanh và bắp cải,
+                                nhưng do những đặc tính độc đáo của nó mà nó được coi là một trong những “siêu thực phẩm” tự nhiên trên thế giới.
                                 Maca được trồng nhiều ở vùng núi Nam Mỹ, chủ yếu ở các vùng có độ cao lớn của Peru.
                             </p>
                         </div>
 
                     </div>
                 </div>
-               
-            </div>         
+
+            </div>
             <div class="elementor">
                 <div class="row3">
                     <h2>NHỮNG SẢN PHẨM TỐT NHẤT ESMOND NATURAL MANG ĐẾN CHO BẠN</h2>
@@ -488,11 +490,11 @@
 
     <footer>
         <div class="container">
-            <div class="noi-dung links">              
-                <div class="footer-logo"></div>            
+            <div class="noi-dung links">
+                <div class="footer-logo"></div>
             </div>
             <div class="noi-dung links">
-                <h3>Về Chúng Tôi</h3>             
+                <h3>Về Chúng Tôi</h3>
                 <ul>
                     <li> <a href="#">Giới Thiệu</a></li>
                     <li><a href="#">Hệ Thống Cửa Hàng</a></li>
@@ -508,7 +510,7 @@
                     <li><a href="#">Góp Ý, Khiếu Nại</a></li>
                 </ul>
             </div>
-           
+
             <div class="noi-dung links" id="chinhsach">
                 <h3>Chính Sách Chung</h3>
                 <ul>
@@ -517,7 +519,7 @@
                     <li><a href="#">Quy Định Chung</a></li>
                     <li><a href="#">Bảo Mật Thông Tin Khách Hàng</a></li>
                 </ul>
-            </div>          
+            </div>
             <div class="noi-dung links">
                 <h3>Thông Tin Liên Hệ</h3>
                 <ul class="info">
@@ -540,15 +542,15 @@
                         <a href="#">Info@Esmondnatural.com</a>
                     </li>
                 </ul>
-            </div>           
+            </div>
         </div>
         <div class="glyphicon-copyright-mark" style="background-color:#000;width:100% ">
             <p style="color:#ffffff;text-align:center">Copyright 2022 © Esmond Natural Inc.</p>
         </div>
     </footer>
     <script>
-       
-        
+
+
         const imgs = document.querySelectorAll(".image-container img");
         const leftArrow = document.querySelector(".arrow-left");
         const rightArrow = document.querySelector(".arrow-right");
@@ -564,7 +566,7 @@
             imgs[index].style.display = "block";
 
         };
-       
+
         defClass(1, 0);
 
         leftArrow.addEventListener("click", function () {
@@ -586,7 +588,7 @@
         startAutoSlide();
 
 
-         function w3_open() {
+        function w3_open() {
             document.getElementById("mySidebar").style.width = "60%";
             document.getElementById("mySidebar").style.display = "block";
         }

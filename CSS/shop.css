@@ -62,23 +62,21 @@ body {
             display: block;
             color: #000;
             text-decoration: none;
-            font-size: 16px;
+            font-size: 17px;
             font-weight: bold;
-            width: 78%;
+            width: 58%;
             height: 50px;
             margin-top: 20px;
             padding-left: 6px;
         }
 
             .header .sticky .topnav .dropdown1 {
-                margin-left: 7%;
-                float: left;
+                margin-left: 10%;
                 width: auto;
                 height: 26px;
-                border: solid #ccc 1px;
-                border-radius: 48px;
-                padding: 10px;
+                padding: 1px;
                 box-sizing: unset;
+                z-index: 1;
             }
 
 .menuM a {
@@ -103,26 +101,31 @@ body {
 .header .sticky .topnav .dropdown1 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #eee;
+    font-size: 16px;
+    /*z-index: 1;*/
+    line-height: 1.5em;
+    /*border: #ccc 1px;*/
+    /*  border-style: none solid solid solid;*/
+    /*border-radius: 20px;*/
+    padding: 10px 16px;
+    opacity: 0.9;
+    min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    border: #ccc 1px;
-    border-style: none solid solid solid;
-    border-radius: 20px;
-    padding: 10px;
 }
 
 .dropdown-content a:hover {
-    background: #ccc;
-    border-radius: 20px;
-    padding: 5px;
+    background: #ddd;
+    /*border-radius:20px;*/
+    /*padding:5px;*/
 }
 
 .header .sticky .topnav .dropdown1:hover .dropbtn {
-    background-color: #ccc;
-    border: solid #ccc 1px;
-    border-radius: 48px;
-    padding: 10px;
+    /*background-color: #eee;*/
+    /*border: solid #ccc 1px;*/
+    /*border-radius: 48px;*/
+    color: #1e73be;
 }
 
 .header .sticky .topnav .dropdown1:hover .dropdown-content {
@@ -135,17 +138,22 @@ body {
     display: block;
 }
 
+    .header .sticky .topnav .dropdown1 a:hover {
+        color: #1e73be;
+    }
+
 .header .sticky .topnav .dropdown1:hover {
-    margin-left: 7%;
-    float: left;
-    width: auto;
+    /*margin-left: 7%;*/
+    /*  float: left;*/
+    /*width:auto;*/
     /*width: 125px;*/
     height: 26px;
-    border: solid #ccc 1px;
-    border-radius: 48px;
-    padding: 10px;
+    /*border: solid #ccc 1px;*/
+    /*border-radius: 48px;*/
+    padding: 1px;
     /*padding-left: 18px;*/
-    background-color: #ccc;
+    /*background-color:#ddd;*/
+
     cursor: pointer;
 }
 
@@ -540,7 +548,7 @@ footer .containerbot {
 
 @media screen and (max-width:768px) {
     /*moblie menu*/
-    nav {
+    #nav {
         display: none;
     }
 
