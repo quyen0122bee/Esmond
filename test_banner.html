@@ -1,268 +1,401 @@
 ﻿<!DOCTYPE html>
-<html>
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+ 
+
+   
     <style>
-        .slider-image {
-            overflow: hidden;
-            height: 540px;
-            width: 100%;
+        /* === Google Font Import - Poppins === */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
         }
 
-        .image-container {
-            width: 300%;
-            /*animation: slideShow 40s infinite;*/
-        }
-
-            .image-container img {
-                float: left;
-                height: 540px;
-                width: 33.33333%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                animation: fade 3s
-            }
-
-        /* @keyframes slideShow {
-            20% {
-                margin-left: 0;
-            }
-            40% {
-                margin-left: -100%;
-            }
-            60% {
-                margin-left: -200%;
-            }
-        }*/
-        @keyframes slideShow {
-
-
-           /* 0% {
-                margin-left: 0;
-            }
-
-            10% {
-                margin-left: 0;
-            }
-
-            20% {
-                margin-left: -100%;
-            }
-
-            30% {
-                margin-left: -100%;
-            }
-
-            40% {
-                margin-left: -200%;
-            }
-
-            50% {
-                margin-left: -200%;
-            }
-
-            60% {
-                margin-left: -100%;
-            }
-
-            70% {
-                margin-left: -100%;
-            }*/
-            from {
-                opacity: 0.1;
-            }
-
-            to {
-                opacity: 1;
-            }
-           
-        }
-
-
-
-
-        /*.slider {
-            width: 100%;
-            height: 540px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .slides {
-            width: 300%;
-            height: 540px;
+        body {
+            height: 100vh;
             display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f2f2f2;
         }
 
-            .slides input {
-                display: none;
-            }
-
-        .slide {
-            width: 50%;
-            transition: 2s;
+        section {
+            position: relative;
+            height: 450px;
+            width: 100%;
+            display: flex;
+            align-items: center;
         }
 
-            .slide img {
+        .swiper {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            overflow: hidden;
+            list-style: none;
+            padding: 0;
+            z-index: 1;
+        }
+        .swiper-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            display: flex;
+            transition-property: transform;
+            box-sizing: content-box;
+        }
+        .swiper-slide {
+            flex-shrink: 0;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transition-property: transform;
+        }
+
+        .card {
+            position: relative;
+            background: #fff;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+            .card::before {
+                content: "";
+                position: absolute;
+                height: 40%;
                 width: 100%;
-                height: 540px;
-            }*/
-
-        .arrow {
-            z-index: 10;
-            position: absolute;
-            margin: auto;
-            top: 0;
-            bottom: 0;
-            left: auto;
-            right: auto;
-            width: 1.5rem;
-            height: 1.5rem;
-            font-size: 1.5rem;
-            color: cornsilk;
-            opacity: 0.5;
-            transition: opacity 1s;
-        }
-
-            .arrow:hover {
-                cursor: pointer;
-                opacity: 1;
+                /*background: #7d2ae8;*/
+                border-radius: 20px 20px 0 0;
             }
 
-        .arrow-left {
-            left: 2%;
+            .card .card-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 5px;
+                position: relative;
+                z-index: 100;
+            }
+
+        section .card .image {
+           /* height: 140px;
+            width: 140px;
+            border-radius: 50%;
+            padding: 3px;*/
+            /*background: #7d2ae8;*/
         }
 
-        .arrow-right {
-            right: 2%;
+            section .card .image img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+                
+            }
+
+        .card .media-icons {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
+            .card .media-icons i {
+                color: #fff;
+                opacity: 0.6;
+                margin-top: 10px;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
 
+                .card .media-icons i:hover {
+                    opacity: 1;
+                }
 
+        .card .name-profession {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            
+        }
 
+        .name-profession .name {
+            /*font-size: 20px;*/
+            font-weight: 600;
+        }
 
+        .name-profession .profession {
+            color: #428bca;
+        }
+
+        .card .rating {
+            display: flex;
+            align-items: center;
+            margin-top: 18px;
+        }
+
+           
+
+        .card .button {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+            .card .button button {
+                background: #428bca;
+                outline: none;
+                border: none;
+                color: #fff;
+                padding: 8px 22px;
+                border-radius: 20px;
+                font-size: 14px;
+                transition: all 0.3s ease;
+                cursor: pointer;
+            }
+
+        .button button:hover {
+            background: #6616d0;
+        }
+
+        .swiper-pagination {
+            position: absolute;
+        }
+
+        .swiper-pagination-bullet {
+            height: 7px;
+            width: 26px;
+            border-radius: 25px;
+            background: #7d2ae8;
+        }
+
+        .swiper-button-next, .swiper-button-prev {
+            opacity: 0.7;
+            /*color: #7d2ae8;*/
+            transition: all 0.5s ease;
+            
+        }
+            .swiper-button-next:after, .swiper-button-prev:after {
+                font-size: 25px;
+            }
+        .swiper-button-next {
+            right: 66px;
+            left: auto;
+        }
+        .swiper-button-prev {
+            left: 66px;
+            right: auto;
+        }
+
+        .swiper-button-next:hover, .swiper-button-prev:hover {
+            opacity: 1;
+/*            color: #7d2ae8;
+*/        }
 
     </style>
 </head>
-
 <body>
-    <div class="slider-frame">
 
-        <div class="slider-image">
-            <div class="arrow arrow-left"><i class="fas fa-chevron-circle-left"></i></div>
-            <div class="image-container">
-                <img src="images/banner.jpg" />
+    <section>
 
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../images/products1.jpg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Esmond</span>
+                            <span class="profession">5$</span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../images/products1.jpg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Esmond</span>
+                            <span class="profession">5$</span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../images/products1.jpg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Esmond</span>
+                            <span class="profession">5$</span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../images/products1.jpg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Esmond</span>
+                            <span class="profession">5$</span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../images/products1.jpg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Esmond</span>
+                            <span class="profession">5$</span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About</button>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../images/products1.jpg" alt="">
+                        </div>
+
+
+
+                        <div class="name-profession">
+                            <span class="name">Esmond</span>
+                            <span class="profession">5$</span>
+                        </div>
+
+
+
+                        <div class="button">
+                            <button class="aboutMe">About</button>
+                            
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div class="image-container">
-
-                <img src="images/banner1.jpg" />
-
-
-            </div>
-            <div class="image-container">
-
-                <img src="images/banner2.jpg" />
-
-            </div>
-            <div class="arrow arrow-right">
-                <i class="fas fa-chevron-circle-right"></i>
-
-
-            </div>
-
         </div>
 
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        
+    </section>
 
-        <!--<div class="slider">
-            <div class="slides">-->
-        <!--radio buttons start-->
-        <!--<input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">-->
-        <!--radio buttons end-->
-        <!--slide images start-->
-        <!--<div class="slide first">
-            <img src="images/banner.jpg" alt="">
-        </div>
-        <div class="slide">
-            <img src="images/banner1.jpg" alt="">
-        </div>
-        <div class="slide">
-            <img src="images/banner2.jpg" alt="">
-        </div>-->
-        <!--slide images end-->
-        <!--automatic navigation start-->
-        <!--<div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-        </div>-->
-        <!--automatic navigation end-->
-        <!--</div>-->
-        <!--manual navigation start-->
-        <!--<div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-
-        </div>-->
-        <!--manual navigation end-->
-    </div>
-    <!--image slider end-->
-    <!--<script type="text/javascript">
-        var counter = 1;
-        setInterval(function () {
-            document.getElementById('radio' + counter).checked = true;
-            counter++;
-            if (counter > 3) {
-                counter = 1;
-            }
-        }, 3000);
-    </script>-->
+    <!-- Initialize Swiper -->
     <script>
-        const imgs = document.querySelectorAll(".image-container img");
-       
-        const leftArrow = document.querySelector(".arrow-left");
-        const rightArrow = document.querySelector(".arrow-right");
-
-        let currentIndex = 0;
-        let time = 7000;
-
-        const defClass = (startPos, index) => {
-            for (let i = startPos; i < imgs.length; i++) {
-                imgs[i].style.display = "none";
-                
-            }
-            imgs[index].style.display = "block";
-         
-        };
-
-        defClass(1, 0);
-
-        leftArrow.addEventListener("click", function () {
-            currentIndex <= 0 ? currentIndex = imgs.length - 1 : currentIndex--;
-            defClass(0, currentIndex);
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 2,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                360: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20,
+                },
+                540: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+            },
         });
-
-        rightArrow.addEventListener("click", function () {
-            currentIndex >= imgs.length - 1 ? currentIndex = 0 : currentIndex++;
-            defClass(0, currentIndex);
-        });
-        const startAutoSlide = () => {
-            setInterval(() => {
-                currentIndex >= imgs.length - 1 ? currentIndex = 0 : currentIndex++;
-                defClass(0, currentIndex);
-            }, time);
-        };
-
-        startAutoSlide();
-       
     </script>
+
 </body>
 </html>

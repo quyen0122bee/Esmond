@@ -20,14 +20,14 @@ a{
 	object-fit: cover;
 	box-sizing: border-box;
 }
-.detail-box{
+.detail-box {
 	width: 100%;
-    display: flex;
+	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 20px;
 	box-sizing: border-box;
-	font-family: calibri;
+	font-family: "Source Sans Pro";
 }
 .type{
 	display: flex;

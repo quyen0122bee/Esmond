@@ -3064,7 +3064,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 }
 
 .s-text8, .s-text8 a {
-	font-family: Tahoma-Regular;
+	
 	font-size: 20px;
 	color: #888888;
 	line-height: 1.8;
@@ -3278,38 +3278,39 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 }
 
 .m-text15 {
-	font-family: Montserrat-Medium;
+	
 	font-size: 18px;
 	color: #555555;
 	line-height: 1.5;
 }
 
 .m-text16 {
-	font-family: Tahoma;
+	
 	font-size: 24px;
 	color: #222222;
 	line-height: 1.5;
 }
 
 .m-text17 {
-	font-family: Tahoma;
+	
 	font-size: 30px;
 	color: #428bca;
 	line-height: 1.2;
 }
 
 .m-text18 {
-	font-family: Tahoma;
+	
 	font-size: 16px;
 	color: #666666;
 	line-height: 1.2;
 }
 
 .m-text19 {
-	font-family: Tahoma;
-	font-size: 16px;
+	
+	font-size: 23px;
 	color: #222222;
-	line-height: 1.5;
+	/*line-height: 1.5;*/
+
 }
 
 .m-text20 {
