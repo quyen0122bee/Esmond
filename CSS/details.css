@@ -12,6 +12,7 @@ body {
     /*font-family: Microsoft YaHei,Helvetica Neue,Helvetica,STHeiTi,Arial,sans-serif;*/
     font-size: 13px;
     margin: auto;
+    line-height: 1.5;
 }
 
 .fl {
@@ -159,7 +160,7 @@ body {
     height: 50%;
     background-color: #fff;
     position: fixed !important;
-    z-index: 1;
+    z-index: 100;
     overflow: auto;
     position: relative;
     animation: animateleft 0.4s;
@@ -204,6 +205,11 @@ body {
 .container{
     margin-top:100px;
 }
+table td,th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
 
 /*footer*/
 body footer {
@@ -218,13 +224,12 @@ body footer {
     width: 100%;
     height: auto;
     /*background: #d1d0ce;*/
+    margin-top:5%;
 
     background: #282d32;
     color: #f0f9ff;
     justify-content: space-between;
     float: left;
-
-    margin-top:5%;
 }
 
 
@@ -236,6 +241,7 @@ footer .containerbot {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    height:300px;
 }
 
     footer .containerbot .footer-logo {
@@ -257,14 +263,18 @@ footer .containerbot {
     margin-bottom: 15px;
 }
 
+.fab{
+    margin-right:10px;
+}
+
 
 
 
 
 .containerbot .noi-dung.links {
     position: relative;
-    padding: 10px 0 10px;
-
+    /*padding: 10px 0 10px;*/
+    margin-top:4%;
 }
 
 
@@ -285,15 +295,6 @@ footer .containerbot {
     opacity: 0.8;
 }
 
-
-/*.links .info li span:nth-child(1) {*/
-/*color: #000;*/
-/*font-size: 20px;
-                margin-right: 10px;
-                color:#f0f9ff;
-            }*/
-
-
 /*tablet*/
 @media screen and (max-width:1356px) {
     .header .sticky .topnav {
@@ -309,7 +310,9 @@ footer .containerbot {
         display: block;
     }
 
-
+    footer .containerbot{
+        height: auto;
+    }
 
 
     .containerbot .noi-dung.links {

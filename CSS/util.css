@@ -3065,9 +3065,13 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 
 .s-text8, .s-text8 a {
 	
-	font-size: 20px;
+	font-size: 19px;
 	color: #888888;
-	line-height: 1.8;
+	line-height: 1.5;
+}
+.b-text8{
+	color: #444444;
+	font-size: 20px;
 }
 
 .s-text9 {
@@ -3235,7 +3239,7 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 }
 
 .m-text9 {
-	font-family: Tahoma;
+	
 	font-size: 30px;
 	color: white;
 	line-height: 1.2;

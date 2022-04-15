@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+
+
+
+
+
+    <title>EVERWIN</title>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="/IMG/logo.ico" rel="shortcut icon" />
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+    <link rel="stylesheet" type="text/css" href="CSS/util.css">
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/slider2.css">
+    <link href="CSS/details.css" rel="stylesheet" />
+
+
+
+
+
+</head>
+
+<body>
+    <div class="page">
+
+
+        <div class="header">
+
+            <div class="sticky">
+                <div class="logo fl">
+                    <a href="index.html">
+                        <img src="../images/logo.png" alt="" />
+                    </a>
+                </div>
+
+                <div class="topnav fr" id="nav">
+
+                    <div class="dropdown1 fl">
+                        <a href="index.html">TRANG CHỦ</a>
+                    </div>
+                    <div class="dropdown1 fl">
+                        <span class="dropbtn">
+                            SẢN PHẨM <i class="fa fa-caret-down"></i>
+                        </span>
+                        <div class="dropdown-content">
+                            <a href="Shop.html">LÀM ĐẸP</a>
+                            <a href="Shop.html">NĂNG LƯỢNG</a>
+                            <a href="Shop.html">TIM MẠCH</a>
+                            <a href="Shop.html">TRẺ EM</a>
+                            <a href="Shop.html">NAM GIỚI</a>
+                        </div>
+                    </div>
+                    <div class="dropdown1 fl">
+                        <a href="About-us.html">VỀ CHÚNG TÔI</a>
+                    </div>
+                    <div class="dropdown1 fl">
+                        <a href="contact-us.html">LIÊN HỆ</a>
+                    </div>
+                </div>
+
+                <div>
+                    <button class="btn-open" onclick="w3_open()">☰</button>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!--sticky-->
+        </div>
+        <div class="menuM" style="display:none" id="mySidebar">
+            <div>
+                <button onclick="w3_close()" class="btn-close"><i class="fa fa-close"></i> </button>
+            </div>
+            <div>
+                <a href="index.html" class="dropbtnM">TRANG CHỦ</a>
+            </div>
+
+            <div class="dropdownM">
+                <span class="dropbtnM">
+                    SẢN PHẨM <i class="fa fa-caret-down"></i>
+                </span>
+                <div class="dropdown-contentM">
+                    <a href="Shop.html">LÀM ĐẸP</a>
+                    <a href="Shop.html">NĂNGG LƯỢNG</a>
+                    <a href="Shop.html">TIM MẠCH</a>
+                    <a href="Shop.html">TRẺ EM</a>
+                    <a href="Shop.html">NAM GIỚI</a>
+                </div>
+            </div>
+            <div>
+                <a href="About-us.html" class="dropbtnM">VỀ CHÚNG TÔI</a>
+            </div>
+
+            <div>
+                <a href="contact-us.html" class="dropbtnM">LIÊN HỆ</a>
+            </div>
+        </div>
+        <!--mobile menu-->
+        <!--header-->
+
+
+        <div class="container bgwhite p-t-35 p-b-80">
+            <div class="flex-w flex-sb">
+                <div class="w-size13 p-t-30 respon5">
+                    <div class="wrap-slick3 flex-sb flex-w">
+                        <div class="wrap-slick3-dots"></div>
+
+                        <div class="slick3">
+                            <div class="item-slick3" data-thumb="images/strong power.jpg">
+                                <div class="wrap-pic-w">
+                                    <img src="images/strong power.jpg" alt="IMG-PRODUCT">
+                                </div>
+                            </div>
+                            <div class="item-slick3" data-thumb="images/strong power.jpg">
+                                <div class="wrap-pic-w">
+                                    <img src="images/strong power.jpg" alt="IMG-PRODUCT">
+                                </div>
+                            </div>
+                            <div class="item-slick3" data-thumb="images/strong power.jpg">
+                                <div class="wrap-pic-w">
+                                    <img src="images/strong power.jpg" alt="IMG-PRODUCT">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-size14 p-t-30 respon5">
+                    <h4 class="product-detail-name m-text16 p-b-13">
+                        Strong Power - Tăng Cường Sinh Lý Nam, Bổ Thận Tráng Dương
+                    </h4>
+
+                    <span class="m-text17">
+                        $139
+                    </span>
+
+                    <p class="s-text8 p-t-10">
+                        - Strong Power được chiết suất từ nhiều loại thảo mộc quý hiếm có nguồn gốc hoàn toàn từ tự
+                        nhiên.
+                        <br>
+                        - Giúp tăng cường nội tiết tố nam Testosterone, tăng sự ham muốn.
+                        <br>
+                        - Tăng sự hưng phấn cho nam giới, làm chậm quá trình mãn dục nam.
+                        <br>
+                        - Khẳng định bản lĩnh phái mạnh.
+                    </p>
+
+                    <div class="wrap-dropdown-content bo6 active-dropdown-content">
+                        <h3 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
+                            Thông Tin Chi Tiết
+                            <i class="down-mark fs-12 color1 fa fa-minus dis-none" aria-hidden="true"></i>
+                            <i class="up-mark fs-12 color1 fa fa-plus" aria-hidden="true"></i>
+                        </h3>
+
+                        <div class="dropdown-content dis-none">
+                            <p class="s-text8">
+
+
+                            <table>
+
+                                <tr>
+                                    <td>Thương Hiệu</td>
+                                    <td>ESMOND NATURAL</td>
+                                </tr>
+                                <tr>
+                                    <td>Thương Hiệu</td>
+                                    <td>Mỹ</td>
+                                </tr>
+                                <tr>
+                                    <td>Sản Xuất Tại</td>
+                                    <td>Mỹ</td>
+                                </tr>
+                                <tr>
+                                    <td>Đóng Gói</td>
+                                    <td>Lọ 30 Viên</td>
+                                </tr>
+
+                            </table>
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="wrap-dropdown-content bo6  active-dropdown-content">
+                        <h3 class="js-toggle-dropdown-content flex-sb-m cs-pointer m-text19 color0-hov trans-0-4">
+                            Mô Tả Sản Phẩm
+                            <i class="down-mark fs-12 color1 fa fa-minus dis-none" aria-hidden="true"></i>
+                            <i class="up-mark fs-12 color1 fa fa-plus" aria-hidden="true"></i>
+                        </h3>
+
+                        <div class="dropdown-content dis-none p-t-15 p-b-23">
+                            <p class="b-text8">
+                                - Công dụng:
+                            <p class="s-text8">
+
+                                Sản phẩm có nguồn gốc chiết suất từ các thảo mộc quý hiếm như củ Maca, rễ Rhodiola...
+                                <br>
+                                Chứa nhiều loại vitamin như Vitamin B6, Vitamin B12, Vitamin B1, Vitamin C...
+                                <br>
+                                Hỗ trợ kích thích cơ thể gia tăng sản sinh Testosterone nhanh hơn, mạnh mẽ hơn.
+
+                                <br>Gia tăng ham muốn, hưng phấn cho nam giới.
+                                <br>
+                                Cải thiện hiệu quả các chức năng sinh lý nam như: Xuất tinh sớm, yếu sinh lý, rối loạn
+                                cương dương, liệt dương, suy giảm ham muốn tình dục…
+                                <br>
+                                Góp phần cải thiện số lượng và chất lượng tinh trùng, tăng khả năng sinh sản ở nam giới
+                                và giảm thiểu quá trình mãn dục sớm.
+                                <br>
+                                Giúp máu lưu thông đến bộ phận sinh dục nhiều hơn để hoạt động tốt hơn.
+                                <br>
+                                Đây là giải pháp mang tính đột phá trong việc tăng cường khả năng sinh lý, sinh lực sung
+                                mãn và sức khỏe toàn thân cho nam giới.
+
+
+                            <p class="b-text8">
+                                - Lưu ý khi sử dụng:
+                            <p class="s-text8">
+                                Sản phẩm này chỉ sử dụng cho nam giới.
+                                <br> Không dành cho phụ nữ mang thai hoặc đang cho con bú.
+                                <br> Nếu bạn đang muốn dùng sản phẩm này hoặc có kế hoạch sử dụng sản phẩm, hãy tham
+                                khảo ý kiến của các bác sĩ trước khi sử dụng.
+                                <br>
+                                Ngừng sử dụng và hỏi ý kiến bác sĩ nếu có bất kỳ tác dụng phụ nào xảy ra khi sử dụng sản
+                                phẩm để tránh các trường hợp xảy ra không mong muốn.
+                                <br>
+                                Sản phẩm này không dành cho người dưới 18 tuổi.
+
+
+
+                                <br>Tránh xa tầm tay của trẻ em, bảo quản ở nơi khô ráo, tránh nhiệt độ cao.
+                                <br>
+
+                                Không sử dụng sản phẩm khi tem niêm phong của sản phẩm có dấu hiệu không nguyên vẹn.
+                                <br> Sản phẩm này không phải thuốc, không có tác dụng thay thế thuốc chữa bệnh.
+                            <p class="b-text8">
+                                - Sản xuất bởi:
+                            <p class="s-text8">
+                                ESMOND NATURAL, INC.
+                                LRWNDALE, CA 91706 USA
+                                <br>
+                                Sản xuất tại Mỹ.
+
+
+                            <p class="b-text8">
+                                - Hướng Dẫn Sử Dụng:
+                            <p class="s-text8">
+
+
+
+                                Đối với người lớn, uống 2 viên mỗi ngày, tốt nhất là sau bữa ăn sẽ mang lại hiệu quả tốt
+                                nhất.
+                                <br>
+                                Trước khi sử dụng sản phẩm nên hỏi ý kiến của người cung cấp sản phẩm cho bạn để tránh
+                                những trường hợp không muốn có.
+
+                                
+                                <table>
+                                    <tr>
+                                        <th>Thành Phần</th>
+                                        <th>Hàm Lượng</th>
+                                    </tr>
+                                    <tr>
+                                        <td>L-Arginine</td>
+                                        <td>1000mg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Củ Maca</td>
+                                        <td>200mg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rễ Rhodiola Rosea</td>
+                                        <td>40mg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kẽm(oxit)</td>
+                                        <td>24.9mg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vitamin B6(Pyridoxine Hydrochloride)</td>
+                                        <td>20mg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vitamin B12 (Cyanocobalamin)</td>
+                                        <td>20mg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vitamin B1 (Thiamine Hydrocholoride)</td>
+                                        <td>20mg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vitamin C (Ascorbic Acid)</td>
+                                        <td>20mg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Taurine</td>
+                                        <td>20mg</td>
+                                    </tr>
+                                </table>
+
+                                
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div style="width:100%;margin-top:5%">
+            <h2 style="text-align:center ; font-size:32px">Sản Phẩm Liên Quan</h2>
+            <section class="slider2">
+
+                <div class="swiper mySwiper container">
+                    <div class="swiper-wrapper content">
+
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="../images/beautiful skin.jpg" alt="">
+                                </div>
+
+
+
+                                <div class="name-profession">
+                                    <span class="name">Beautiful Skin</span>
+                                    <span class="profession">139$</span>
+                                </div>
+
+
+
+                                <div class="button">
+                                    <button class="aboutMe">Xem Thêm</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="../images/hepa energry.jpg" alt="">
+                                </div>
+
+
+
+                                <div class="name-profession">
+                                    <span class="name">Hepa Energry</span>
+                                    <span class="profession">139$</span>
+                                </div>
+
+
+
+                                <div class="button">
+                                    <button class="aboutMe">Xem Thêm</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="../images/strong power.jpg" alt="">
+                                </div>
+
+
+
+                                <div class="name-profession">
+                                    <span class="name">Esmond</span>
+                                    <span class="profession">139$</span>
+                                </div>
+
+
+
+                                <div class="button">
+                                    <button class="aboutMe">Xem Thêm</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card">
+                            <div class="card-content">
+                                <div class="image">
+                                    <img src="../images/beautiful skin.jpg" alt="">
+                                </div>
+                                <div class="name-profession">
+                                    <span class="name">Beautiful Skin</span>
+                                    <span class="profession">139$</span>
+                                </div>
+                                <div class="button">
+                                    <button class="aboutMe">Xem Thêm</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+            </section>
+            <!--slide products-->
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="containerbot">
+            <div class="noi-dung links">
+                <div class="footer-logo"></div>
+            </div>
+            <div class="noi-dung links">
+                <h3>VỀ CHÚNG TÔI</h3>
+                <ul>
+                    <li> <a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Hệ Thống Cửa Hàng</a></li>
+                    <li> <a href="#">Thống Tin Tuyển Dụng</a></li>
+                </ul>
+            </div>
+            <div class="noi-dung links">
+                <h3>HỖ TRỢ KHÁCH HÀNG</h3>
+                <ul>
+                    <li><a href="#">Góp Ý, Khiếu Nại</a></li>
+                    <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                    <li><a href="#">Hướng Dẫn Thanh Toán</a></li>
+
+                    <li><a href="#">Chính Sách Khách Hàng</a></li>
+
+                </ul>
+            </div>
+
+            <div class="noi-dung links" id="chinhsach">
+                <h3>CHÍNH SÁCH CHUNG</h3>
+                <ul>
+                    <li><a href="#">Quy Định Chung</a></li>
+                    <li><a href="#">Chính Sách Đổi Trả</a></li>
+                    <li><a href="#">Chính Sách Vận Chuyển</a></li>
+
+                    <li><a href="#">Bảo Mật Thông Tin Khách Hàng</a></li>
+                </ul>
+            </div>
+            <div class="noi-dung links">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+                <ul class="info">
+
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <a href="#">Info@Esmondnatural.com</a>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <span>
+                            <a> (626) 337-1588; </a>
+
+                            <a>(800) 814-6866</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <a>
+                            5316 N Irwindale Ave, Irwindale, CA 91706
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <span style="align-items:center">
+                            <i class="fab fa-facebook fa-2x"></i>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <i class="fab fa-twitter-square fa-2x"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="glyphicon-copyright-mark" style="background-color:#000;width:100% ">
+            <p style="color:#ffffff;text-align:center">Copyright 2022 © Esmond Natural Inc.</p>
+        </div>
+    </footer>
+
+    <div id="dropDownSelect1"></div>
+    <div id="dropDownSelect2"></div>
+
+
+
+
+    <script type="text/javascript" src="Scripts/vendor/animsition/js/animsition.min.js"></script>
+
+    <script type="text/javascript" src="Scripts/vendor/slick/slick.min.js"></script>
+    <script type="text/javascript" src="Scripts/details/slick-custom.js"></script>
+
+    <script src="Scripts/details/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        function w3_open() {
+            document.getElementById("mySidebar").style.width = "60%";
+            document.getElementById("mySidebar").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+
+
+        var swiper = new Swiper(".mySwiper", {
+
+
+            slidesPerView: 4,
+            spaceBetween: 30,
+            slidesPerGroup: 2,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                360: {
+                    slidesPerView: 2,
+                    spaceBetween: 4,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 3,
+                },
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 2,
+                },
+                //1024: {
+                //    slidesPerView: 3,
+                //    spaceBetween: 20,
+                //},
+            },
+        });
+    </script>
+
+
+</body>
+
+
+
+
+</html>
