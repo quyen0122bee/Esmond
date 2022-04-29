@@ -14,6 +14,14 @@ body {
     margin: auto;
     line-height: 1.5;
 }
+::-webkit-scrollbar {
+    width:5px;
+    /* border-radius: 10px; */
+  }
+  ::-webkit-scrollbar-thumb{
+      background:#ddd;
+      border-radius: 10px;
+  }
 
 .fl {
     float: left;
@@ -415,7 +423,7 @@ footer .container {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    height:300px;
+    height:auto;
 }
 
     footer .container .footer-logo {
@@ -449,6 +457,7 @@ footer .container {
     position: relative;
     /*padding: 10px 0 10px;*/
     margin-top:4%;
+    margin-bottom: 4%;
 }
 
 
